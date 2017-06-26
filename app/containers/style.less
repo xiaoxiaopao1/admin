@@ -1,0 +1,21 @@
+.app{
+	width: 100%;
+
+	@diff : 200px;
+
+	.nav{
+		width: @diff;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.content{
+		width: calc(~"100% - @{diff}");
+		height: 100%;
+		position: absolute;
+		left: @diff;
+		top: 0;
+	}
+}

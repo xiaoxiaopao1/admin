@@ -5,6 +5,8 @@ import { hashHistory } from 'react-router';
 
 import RouteMap from './router/routeMap';
 
+import './static/css/common.less';
+import './static/css/font.css';
 
 
 

@@ -1,0 +1,67 @@
+.changeBtn{
+	display: inline-block;
+	width: 80px;
+	height: 26px;
+	border-radius: 13px;
+	border: 1px solid #108ee9;
+	color: #fff;
+	background-color: #108ee9;
+	padding: 2px;
+	font-size: 0;
+	position: relative;
+	cursor: pointer;
+	
+	.circle{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-radius: 10px;
+		background-color: #fff;
+		position: absolute;
+		top: 2px;
+	}
+	.circle1{
+		left: 2px;
+		
+	}
+	.circle2{
+		right: 2px;
+	}
+	.word{
+		display: inline-block;
+		line-height: 20px;
+		font-size: 15px;
+		
+	}
+	.word1{
+		float: right;
+		margin-right: 10px;
+	}
+	.word2{
+		float: left;
+		margin-left: 10px;
+	}
+}
+.left-to-right{
+	border: 1px solid #fff;
+	background-color: red;
+
+	.circle{
+		animation: left-to-right 0.5s linear;
+		animation-fill-mode: forwards
+	}	
+}
+.right-to-left{
+	.circle{
+		animation: right-to-left 0.5s linear;
+		animation-fill-mode: forwards
+	}
+}
+@keyframes left-to-right{
+	from {left: 2px}
+	to {left: 56px}
+}
+@keyframes right-to-left{
+	from {left: 56px}
+	to {left: 2px}
+}
